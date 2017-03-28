@@ -1,6 +1,9 @@
 pyAndroZoo
 ==========
 
+`pyAndroZoo <https://github.com/ICC-analysis/pyAndroZoo>`_ is a Python library
+to access the `AndroZoo <https://androzoo.uni.lu>`_ data set.
+
 Installation
 ------------
 
@@ -19,7 +22,7 @@ Usage
     Type "help", "copyright", "credits" or "license" for more information.
     >>> import pyandrozoo
     >>> androzoo = pyandrozoo.pyAndroZoo('<YOUR-API-KEY>')
-    >>> apk = androzoo.get('SHA256')
+    >>> apk = androzoo.get('<SHA256>')
 
 
 Contact
