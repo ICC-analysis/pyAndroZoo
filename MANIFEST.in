@@ -1,0 +1,8 @@
+# binary files
+#recursive-include bin *
+
+#Misc
+include COPYING
+include README.rst
+include CHANGELOG.rst
+include requirements.txt
