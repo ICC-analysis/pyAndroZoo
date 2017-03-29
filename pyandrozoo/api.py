@@ -19,4 +19,4 @@ class pyAndroZoo():
         with open(sha256+'.apk', "wb") as apk_file:
             r = requests.get(self.root_url, payload)
             apk_file.write(r.content)
-            return r
+            return r, apk_file.name
