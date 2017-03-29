@@ -9,7 +9,7 @@ import grequests
 ANDROZOO_URL = 'https://androzoo.uni.lu/api/download'
 
 def exception_handler(request, exception):
-    print('Request failed: {}'.format(exception))
+    print('Request failed: {}'.format(request.url))
 
 class pyAndroZoo():
     def __init__(self, apikey=None, url=ANDROZOO_URL):
@@ -22,6 +22,8 @@ class pyAndroZoo():
         if r.status_code == 200:
              with open(sha256+'.apk', "wb") as apk_file:
                  apk_file.write(r.content)
+        else:
+            print('Request failed for: {}'.format(sha256))
         return r
 
     def get(self, sha256_list):

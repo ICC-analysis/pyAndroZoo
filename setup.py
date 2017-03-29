@@ -17,7 +17,7 @@ with open('CHANGELOG.rst', 'r') as f:
 
 setup(
     name='pyAndroZoo',
-    version='0.2',
+    version='0.3',
     author='Cédric Bonhomme',
     author_email='cedric@cedricbonhomme.org',
     packages=packages,
