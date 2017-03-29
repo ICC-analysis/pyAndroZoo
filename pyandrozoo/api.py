@@ -18,5 +18,8 @@ class pyAndroZoo():
         payload.update(self.payload)
         with open(sha256+'.apk', "wb") as apk_file:
             r = requests.get(self.root_url, payload)
-            apk_file.write(r.content)
-            return r, apk_file.name
+            if r.status_code == 200:
+                apk_file.write(r.content)
+                return r, apk_file.name
+            else:
+                return r, None
