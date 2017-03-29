@@ -8,7 +8,7 @@ except ImportError:
 
 packages = ['pyandrozoo']
 scripts = []
-requires = ['requests']
+requires = ['grequests']
 
 with open('README.rst', 'r') as f:
     readme = f.read()
