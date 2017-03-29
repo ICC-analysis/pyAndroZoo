@@ -36,8 +36,7 @@ Retrieve APKs with asynchronous HTTP requests.
         '00001A21E96C4D131B5DC27897E89D23FC35D6D75A4CE1B15D6D30A4E4FC60F1'
     ]
 
-
-    >>> result, apk_name = androzoo.get(apks)
+    >>> androzoo.get(apks)
 
 
 Alternatively you can set the AndroZoo API key in an environment variable:
@@ -53,7 +52,7 @@ Alternatively you can set the AndroZoo API key in an environment variable:
     Type "help", "copyright", "credits" or "license" for more information.
     >>> import pyandrozoo
     >>> androzoo = pyandrozoo.pyAndroZoo()
-    >>> result, apk_name = androzoo.get(['<SHA256>'])
+    >>> androzoo.get(['<SHA256>'])
 
 
 
