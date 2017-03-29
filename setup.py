@@ -1,22 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import os
-import sys
-import shutil
-
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
 
-packages = [
-    'pyandrozoo'
-]
-
-scripts = [
-]
-
+packages = ['pyandrozoo']
+scripts = []
 requires = ['requests']
 
 with open('README.rst', 'r') as f:
@@ -26,14 +17,14 @@ with open('CHANGELOG.rst', 'r') as f:
 
 setup(
     name='pyAndroZoo',
-    version='0.1',
+    version='0.2',
     author='Cédric Bonhomme',
     author_email='cedric@cedricbonhomme.org',
     packages=packages,
     include_package_data=True,
     scripts=scripts,
     url='https://github.com/ICC-analysis/pyAndroZoo',
-    description='Client to access the AndroZoo data set.',
+    description='A Python library to access the AndroZoo data set.',
     long_description=readme + '\n|\n\n' + changelog,
     platforms = ['Linux'],
     license='GPLv3',
@@ -46,7 +37,6 @@ setup(
         'Intended Audience :: Science/Research',
         'Topic :: Security',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)'
     ]
