@@ -60,3 +60,5 @@ Contact
 -------
 
 `Cédric Bonhomme <https://www.cedricbonhomme.org>`_
+
+Copyright (C) 2017-2025 Cédric Bonhomme - https://github.com/cedricbonhomme

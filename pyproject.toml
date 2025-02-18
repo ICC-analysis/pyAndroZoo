@@ -1,0 +1,63 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[project]
+name = "pyAndroZoo"
+version = "0.3.1"
+description = "A Python library to access the AndroZoo data set."
+authors = [
+    {name = "Cédric Bonhomme",email = "cedric@cedricbonhomme.org"}
+]
+license = "GPL-3.0-or-later"
+readme = "README.rst"
+keywords = ["android", "androzoo", "malware"]
+
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "grequests (>=0.7.0)"
+]
+
+[project.urls]
+Homepage = "https://github.com/ICC-analysis/pyAndroZoo"
+Repository = "https://github.com/ICC-analysis/pyAndroZoo"
+Changelog = "https://github.com/ICC-analysis/pyAndroZoo/blob/master/CHANGELOG.rst"
+
+
+[tool.poetry]
+requires-poetry = ">=2.0"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Security",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
+]
+
+
+[tool.mypy]
+python_version = "3.13"
+check_untyped_defs = true
+ignore_errors = false
+ignore_missing_imports = true
+strict_optional = true
+no_implicit_optional = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unreachable = true
+
+show_error_context = true
+pretty = true
+
+exclude = "build|dist|docs"
+
+[tool.isort]
+profile = "black"

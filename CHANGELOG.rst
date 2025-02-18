@@ -1,6 +1,13 @@
 Release History
 ===============
 
+0.3.1 (2025-02-18)
+------------------
+
+- Updated dependencies.
+- The project is now using Trusted Publishing with Pypi.
+
+
 0.3 (2017-03-29)
 ----------------
 
