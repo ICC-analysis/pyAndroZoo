@@ -4,7 +4,7 @@
 import os
 from urllib.parse import urlparse, urlunparse, urlencode, parse_qs
 
-import grequests  # type: ignore[import-untyped]
+import grequests
 
 ANDROZOO_URL = 'https://androzoo.uni.lu/api/download'
 

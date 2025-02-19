@@ -1,6 +1,12 @@
 Release History
 ===============
 
+0.3.2 (2025-02-19)
+------------------
+
+- Minor improvements and improved type checks.
+
+
 0.3.1 (2025-02-18)
 ------------------
 

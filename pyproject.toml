@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [project]
 name = "pyAndroZoo"
-version = "0.3.1"
+version = "0.3.2"
 description = "A Python library to access the AndroZoo data set."
 authors = [
     {name = "Cédric Bonhomme",email = "cedric@cedricbonhomme.org"}
@@ -40,6 +40,10 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
 ]
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.15.0"
 
 
 [tool.mypy]
