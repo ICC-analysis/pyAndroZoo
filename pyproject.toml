@@ -12,7 +12,7 @@ authors = [
 ]
 license = "GPL-3.0-or-later"
 readme = "README.rst"
-keywords = ["android", "androzoo", "malware"]
+keywords = ["android", "androzoo", "malware", "apk"]
 
 requires-python = ">=3.10,<4.0"
 dependencies = [
